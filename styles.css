@@ -1,0 +1,298 @@
+:root {
+  --color-primary-dark: #564533;
+  --color-primary-light: #e9d6c3;
+  --color-brand-light: #819b57;
+  --color-brand-dark: #465929;
+}
+
+body {
+  background-color: var(--color-primary-dark);
+  color: var(--color-primary-dark);
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+main {
+  background-color: var(--color-primary-light);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 15px;
+}
+
+li {
+  padding-left: 0px;
+}
+
+/* Стилі посилань */
+.link {
+  color: var(--color-primary-light);
+  cursor: pointer;
+  text-decoration: auto;
+}
+
+.link:hover {
+  color: var(--color-brand-dark);
+}
+
+/* -------------- */
+
+/* Header */
+
+.hero-section {
+  box-sizing: border-box;
+  background-image: linear-gradient(
+      102.76deg,
+      rgba(18, 18, 17, 0.78) 2.03%,
+      rgba(18, 18, 17, 0.6) 58.46%,
+      rgba(18, 18, 17, 0) 90.36%
+    ),
+    url(https://t4.ftcdn.net/jpg/03/14/92/75/360_F_314927575_yqFMAuXFTNC6gBflR2njRZ4bQb8dAb7y.jpg);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 250px;
+}
+
+.hero-title {
+  color: var(--color-primary-light);
+  font-size: 55px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-title .accent {
+  color: var(--color-brand-light);
+  display: contents;
+}
+
+.navigation-sec {
+  padding: 1px 0;
+  background-color: var(--color-brand-light);
+}
+
+.container-nav {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.navigation {
+  font-size: 30px;
+}
+
+.navigation-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 0;
+}
+
+.sec-about-site {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.about-site {
+  font-size: 25px;
+  color: var(--color-primary-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.site-functions {
+  margin-left: 350px;
+}
+
+.func-list-title {
+  font-size: 25px;
+}
+
+/* ----------------------------------------- */
+
+.sec-find-office-func {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.office-func-pointer {
+  width: 100px;
+  height: 100px;
+  transform: scale(-1, -1);
+  margin-left: 20px;
+}
+
+.find-office-func {
+  font-size: 25px;
+  background-color: var(--color-brand-light);
+  color: var(--color-primary-light);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 250px;
+  padding: 0 24px;
+  margin-right: 320px;
+  margin-left: 20px;
+}
+
+/* ---------------------------------------------------- */
+
+.sec-find-office-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.office-info-pointer {
+  width: 100px;
+  height: 100px;
+  transform: scale(1, -1);
+  margin-right: 20px;
+}
+
+.find-office-info {
+  font-size: 25px;
+  background-color: var(--color-brand-light);
+  color: var(--color-primary-light);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 250px;
+  padding: 0 24px;
+  margin-right: 20px;
+  margin-left: 320px;
+}
+
+/* --------------------------------------------------- */
+
+.sec-watch-office {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.office-watch-pointer {
+  width: 100px;
+  height: 100px;
+  transform: scale(-1, -1);
+  margin-left: 20px;
+}
+
+.watch-office-list {
+  font-size: 25px;
+  background-color: var(--color-brand-light);
+  color: var(--color-primary-light);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 250px;
+  padding: 0 24px;
+  margin-right: 320px;
+  margin-left: 20px;
+}
+
+/* ----------------------------------------------------- */
+
+.accent {
+  color: var(--color-primary-dark);
+  font-weight: bold;
+}
+
+/* ----------- Сторінка з картою -------------------------- */
+
+.content {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  padding-bottom: 15px;
+}
+
+.map {
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 30px;
+}
+
+
+.companies-list {
+  margin-left: 30px;
+  color: var(--color-primary-light);
+  padding: 1px 10px;
+  background-color: var(--color-brand-light);
+}
+
+.companies-link{
+    color: var(--color-primary-light);
+  cursor: pointer;
+  text-decoration: auto;
+}
+
+.companies-link:hover{
+    color: var(--color-brand-dark);
+
+}
+
+/* ----------------- Сторінка про компанії--------------------- */
+
+h3{
+  font-size: 30px;
+}
+
+.compan-ul{
+  margin-left: 5px;
+  list-style-type: disclosure-closed;
+}
+
+.compan-item{
+  border: 3px solid var(--color-brand-light); 
+  margin-bottom: 10px; 
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.accent-compan{
+  color: var(--color-brand-light);
+  font-weight: bold;
+}
+
+.companies-sites-link {
+  font-weight: bold;
+  color: var(--color-primary-light);
+  cursor: pointer;
+  text-decoration: auto;
+  padding: 10px;
+  background-color: var(--color-brand-light);
+}
+
+.companies-sites-link:hover {
+  color: var(--color-brand-dark);
+}
+
